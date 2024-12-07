@@ -1,0 +1,83 @@
+.join-date-wrapper {
+    perspective: 1000px;
+    position: absolute;
+    top:0;
+    right: 0;
+}
+
+.join-date-card {
+    width: 320px;
+    background: white;
+    border-radius: 16px;
+    padding: 25px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.join-date-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, transparent, rgb(171 6 13 / 30%), transparent);
+    transform: rotate(-45deg);
+    z-index: 1;
+}
+
+.join-date-card:hover {
+    transform: rotateX(0) rotateY(0) scale(1.05);
+    box-shadow: 0 20px 45px rgba(0,0,0,0.15);
+}
+
+.join-date-calendar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.join-date-icon {
+    width: 60px;
+    height: 60px;
+    background: #ab1c22;
+    border-radius: 12px;
+    display: flex
+;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    transform: translateZ(20px);
+}
+
+.join-date-icon svg {
+    width: 35px;
+    height: 35px;
+    fill: white;
+}
+
+.join-date-details {
+    flex-grow: 1;
+}
+
+.join-date-label {
+    font-size: 14px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    position: relative;
+    z-index: 5;
+}
+
+.join-date-value {
+    font-size: 24px;
+    font-weight: 600;
+    color: #2c3e50;
+    background: #ab1c22;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
