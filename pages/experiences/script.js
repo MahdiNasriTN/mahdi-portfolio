@@ -291,7 +291,7 @@ document.addEventListener('DOMContentLoaded', () => {
         scrollTrigger: {
             trigger: ".hero-sections-container",
             start: "top+=6800 center",
-            end: "top+=8000 center",
+            end: "top+=8600 center",
             scrub: 1,
             
         }
@@ -301,7 +301,7 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             ease: "power2.in",
             scale: 4,
-            x: "-320%"
+            x: "-340%"
         }
     );
 
